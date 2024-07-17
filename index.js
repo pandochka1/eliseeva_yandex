@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    // alert('Привет! Я работаю под 2 размера экрана: \n 1366px  и  375px! \n Таки размеры взяты из ТЗ \n А также я был создан и протестирован под Safari')
+    alert('Привет! Я работаю под 2 размера экрана: \n 1366px  и  375px! \n Таки размеры взяты из ТЗ \n А также я был создан и протестирован под Safari')
     let currentSlide;
     let slidesCount;
     let sliderCounter = document.createElement("div");

@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  alert('Привет! Я работаю под 2 размера экрана: \n 1366px  и  375px! \n Таки размеры взяты из ТЗ \n А также я был создан и протестирован под Safari')
   $(" .transformation_slider .slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
