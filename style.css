@@ -1,0 +1,441 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+header{
+    height: 700px;
+    background-image: url('Pictures/header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    height: 36px;
+    padding-top: 26px;
+    padding-left: 72px;
+}
+
+nav .horse{
+    display: flex;
+    align-self: end;
+}
+
+nav img{
+    width: 22px;
+    height: 32px;
+}
+
+nav .logo{
+    display: flex;
+    color:#595653;
+}
+
+nav .textLogo{
+    font-family: "Golos Text", sans-serif;
+    font-weight: 700;
+    font-size: 16.65pt;
+    line-height: 18px;
+}
+
+/* header content */
+
+.headerContent{
+    margin: 124px 0 0 72px ;
+    width: 560px;
+    height: 444px;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.headerContent .headers{
+    text-transform: uppercase;
+    font-size:40pt;
+    line-height: 66px;
+    color:#313131;
+}
+
+.headerContent .headers .textCenter{
+    display: block;
+    text-align: center;
+}
+
+.headerContent .headers .textRight{
+    display: block;
+    text-align: right;
+}
+
+.headerContent p{
+    width: 560px;
+    height: 46px;
+    font-family: "Golos Text", sans-serif;
+    font-size: 14pt;
+    text-align: center;
+    color:#313131;
+}
+
+.headerContent .headerButtons{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.headerContent .headerButtons a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.headerContent .buttonThought, .headerContent .buttonTournament{
+    height: 72px;
+    width: 263px;
+    border: none;
+    border-radius: 66px;
+}
+
+.headerContent .buttonThought p, .headerContent .buttonTournament p{
+    font-family: "Golos Text", sans-serif;
+    font-style: normal;
+    font-size: 12pt;
+    width: 165px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.headerContent .buttonThought{
+    background: #1F1F1F;
+}
+
+.headerContent .buttonThought p{
+    color: #FFFFFF;
+}
+
+.headerContent .buttonTournament{
+    background: transparent;
+    border: 2px solid  #1F1F1F;;
+}
+
+.headerContent .buttonTournament a{
+    color: #1F1F1F;
+}
+
+/* Бегущая строка */
+.ticker{
+    background: #F54932;
+    padding: 18px 12px;
+    display: flex;
+    gap: 12px;
+    height: 60px;
+    align-items: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 22pt;
+    cursor: pointer;
+}
+
+.ticker img{
+    width: 6px;
+    height: 6px;
+}
+
+/* group players */
+
+.groupPlayers {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 72px;
+}
+
+.groupPlayers p{
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 30pt;
+    align-self: center;
+}
+
+.groupPlayers .groupPlayersRed{
+    color:#F54932;
+}
+
+.groupPlayers img{
+    justify-self: end;
+    align-self: center;
+    grid-column: 2;
+    grid-row: 1/span 2;
+}
+
+/* player table */
+
+.playerTable{
+    display: flex;
+    padding-left: 72px;
+    gap: 16px;
+}
+
+.playerTable img{
+    width: 474px;
+    height: 527px;
+}
+
+.playerTable .textUppercase{
+    text-transform: uppercase;
+    width: 704px;
+    height: 147;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-size: 30pt;
+    
+}
+
+.playerTable .textUppercase .textUppercaseRed{
+    color:#F54932;
+}
+
+
+.playerTable .textGrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-family: "Golos Text", sans-serif;
+    font-style: normal;
+    font-size: 14pt;
+    margin-top: 40px;
+}
+
+.playerTable .textGrid div{
+    padding: 7px 0;
+    line-height: 24px;
+}
+
+.playerTable .textGrid .textGridLeft{
+    color: #313131;
+    opacity: 0.7;
+    border-right: 2px solid #D0D0D0;
+}
+
+.playerTable .textGrid .textGridRight{
+    color: #313131;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+.playerTable .textGrid .textbottom{
+    border-bottom: 2px solid #D0D0D0;
+}
+
+.playerTable .textBlue{
+    font-family: "Golos Text", sans-serif;
+    font-style: normal;
+    font-size: 13pt;
+    color:#3057A2;
+    padding-top: 40px;
+}
+
+
+/* transformation */
+
+.transformation{
+    margin-top: 120px;
+}
+
+.transformation .transformationTextGrid{
+    padding-left: 72px;
+    width: 806px;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 54px);
+}
+
+.transformation .transformationTextGrid .text_one, .transformation .transformationTextGrid .text_two{
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 40pt;
+    line-height: 64px;
+}
+
+.transformation .transformationTextGrid .text_one{
+    grid-column: 1 /span 3;
+    grid-row: 1;
+}
+
+.transformation .transformationTextGrid .text_three{
+    width: 280px;
+    font-size: 14pt;
+    align-self: end;
+    color:#3057A2;
+    font-family: "Golos Text", sans-serif;
+    font-style: normal;
+}
+
+.transformation .transformationTabletGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 30px 72px;
+}
+
+.transformation .transformationTabletGrid>div{
+    background-image: url('Pictures/fon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.transformation .transformationTabletGrid .boxTextNum{
+    background: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 20px;
+    height: 20px;
+    font-family: "Golos Text", sans-serif;
+    font-style: normal;
+    font-size: 10pt;
+}
+
+.transformation .transformationTabletGrid p{
+    font-family: "Golos Text", sans-serif;
+    font-style: normal;
+    font-size: 15pt;
+}
+
+.transformation .transformationTabletGrid .textRow{
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+.transformation .transformationTabletGrid .textColumn{
+    grid-column: 2 / span 2;
+    grid-row: 3;
+}
+
+.transformation .transformationTabletGrid .textColumn p{
+    width: 50%;
+}
+
+.transformation .transformationTabletGrid .boxImg{
+    background-image: none;
+    width: 300px;
+    grid-column: 3;
+    grid-row: 2/span 2;
+    margin-left: 50px;
+}
+
+.transformation_slider{
+    display: none;
+}
+
+
+/* слайдер */
+
+.carouselTitle{
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 40pt;
+    padding: 120px 72px 50px 72px;
+}
+.slider .slick-arrow {
+    position: absolute;
+    top: -110px;
+    right: 15px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 72px;
+    border: none;
+    font-size: 25pt;
+    color: #FFFFFF;
+    background-color: #313131;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .slider .slick-prev {
+    right: 150px;
+  }
+
+  .slider .slider__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider .slider__item h3{
+    text-align: center;
+    font-family: "Golos Text", sans-serif;
+    font-style: normal;
+    font-size: 16pt;
+    margin-top: 20px;
+}
+
+.slider .slider__item p{
+    text-align: center;
+    font-family: "Golos Text", sans-serif;
+    font-style: normal;
+    font-size: 12pt;
+    color:#313131;
+    opacity: 0.6;
+}
+
+.slider .slider__item button{
+    width: 113px;
+    height: 35px;
+    border: none;
+    border: 1px solid #3057A2;
+    font-family: "Golos Text", sans-serif;
+    font-style: normal;
+    padding: 10px;
+    border-radius: 62px;
+    background: transparent;
+    color: #3057A2;
+}
+
+.slider .slider__counter{
+    /* background-color: aliceblue; */
+    width: max-content;
+    font-family: "Golos Text", sans-serif;
+    font-style: normal;
+    position: absolute;
+    top: -100px;
+    right: 100px;
+    font-size: 18pt;
+    padding: 0 60px;
+    display: flex;
+    justify-content: end;
+}
+
+.carousel {
+    padding-bottom: 150px;
+}
+
+/* footer */
+
+footer{
+    padding: 50px 72px;
+    height: 150px;
+    background: #E9DED4;
+    color:#313131;
+    opacity: 0.6;
+    font-family: "Golos Text", sans-serif;
+    font-style: normal;
+}
+
+  

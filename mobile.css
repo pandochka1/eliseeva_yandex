@@ -1,0 +1,324 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 375px){
+    /* header */
+    header{
+        height: 770px;
+        overflow: hidden;
+        background-image: url('Pictures/fonmobail.png');
+    }
+
+    nav{
+        height: 27px;
+        padding: 20px;
+    }
+
+    nav .textLogo{
+        font-size: 14pt;
+        line-height: 16px;
+    }
+    
+    /* header content */
+
+    .headerContent{
+        margin: 80px 0 0 20px ;
+        width: 335px;
+        height: 160px;
+    }
+    
+    .headerContent .headers{
+        font-size:26pt;
+        line-height: 39px;
+    }
+    
+    .headerContent p{
+        margin-top: 20px;
+        width: 335px;
+        height: 69px;
+        font-size: 13pt;
+        text-align: left;
+    }
+
+    .headerContent a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    
+    .headerContent .headerButtons{
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 20px;
+    }
+    
+    .headerContent .buttonThought, .headerContent .buttonTournament{
+        height: 47px;
+        width: 335px;
+        border: none;
+        border-radius: 66px;
+    }
+    
+    .headerContent .buttonThought p, .headerContent .buttonTournament p{
+        height: 46px;
+        font-size: 12pt;
+        width: max-content;
+    }
+        
+    .headerContent .buttonTournament{
+        background: transparent;
+        border: 2px solid  #1F1F1F;
+    }
+
+    .headerContent .buttonTournament a{
+        color: #1F1F1F;
+    }
+
+    /* Бегущая строка */
+
+    .ticker{
+        padding: 12px;
+        height: 38px;
+        font-size: 15pt;
+    }
+
+    /* group players */
+
+    .groupPlayers {
+        grid-template-columns:1fr;
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .groupPlayers p{
+        font-size: 18pt;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .groupPlayers img{
+        justify-self: center;
+        width: 335px;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .groupPlayers .groupPlayersRed{
+        display: block;
+    }
+
+    .groupPlayers .groupPlayersTextTwo{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    
+    /* player table */
+
+    .playerTable{
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    .playerTable img{
+        width: 335px;
+        height: 402px;
+    }
+
+    .playerTable .textUppercase{
+        width: 335px;
+        height: 228;
+        font-size: 18pt;
+    }
+
+    .playerTable .textGrid{
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+        width: 335px;
+    }
+
+    .playerTable .textGrid div{
+        padding: 7px 0;
+        line-height: 20px;
+    }
+
+    .playerTable .textGrid .textGridLeft{
+        border-right: none;
+    }
+
+    .playerTable .textGrid .textGridRight{
+        padding-left: 0px;
+    }
+
+    .playerTable .textGrid .textbottom{
+        border-bottom: none;
+    }
+
+    .playerTable .textGrid .borderBottom{
+        border-bottom: 2px solid #D0D0D0;
+    }
+
+    .playerTable .textBlue{
+        font-size: 12pt;
+        padding-top: 40px;
+    }
+
+    /* transformation */
+
+    .transformation{
+        display: none;
+    }
+
+    .transformation_slider{
+        display: block;
+    }
+
+    /* слайдер для мобильной версии */
+    
+    .transformation_slider{
+        margin-top: 80px;
+    }
+    
+    .transformation_slider .transformationTextGrid{
+        margin-left: 20px;
+        width: 360px;
+    }
+    .transformation_slider .transformationTextGrid .text_one, .transformation_slider .transformationTextGrid .text_two{
+        font-family: "Merriweather", serif;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: 22pt;
+    }
+    
+    .transformation_slider .transformationTextGrid .text_three{
+        width: 280px;
+        font-size: 14pt;
+        align-self: end;
+        color:#3057A2;
+        font-family: "Golos Text", sans-serif;
+        font-style: normal;
+        margin: 20px 0;
+    }
+
+    .transformation_slider .slider__item{
+        grid-template-columns: 1fr;
+        gap: 0px;
+        height: 480px;
+        width: 380px;
+        margin: 0 20px;
+    }
+
+    .transformation_slider .slider__item>div{
+        background-image: url('Pictures/fon.png');
+        padding: 15px;
+        font-family: "Golos Text", sans-serif;
+        font-style: normal;
+        color:#313131;
+        text-align: justify;
+        height: max-content;
+    }
+
+    .transformation_slider .slider__item .boxImg{
+        background-image: none;
+        height: max-content;
+        position: relative;
+        z-index: 1;
+    }
+
+    .transformation_slider .slider__item .boxText{
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+        font-size: 14pt;
+        text-align: justify;
+        position: relative;
+        top: -70px;
+        height: max-content;
+    }
+
+    .transformation_slider .slider__item .boxTextNotImg{
+        position: relative;
+        top: 65px;
+    }
+
+    .transformation_slider .slider__item .boxTextNotImg p{
+        display: flex;
+        align-self: center;
+    }
+
+    .transformation_slider .slider__item .boxText .boxTextNum{
+        width: 30px;
+        height: 30px;
+        align-self: center;
+        border-radius: 50%;
+        background: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .transformation_slider .slider .slick-arrow {
+        position: absolute;
+        z-index: 1;
+        top: 460px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        font-size: 25pt;
+        color: #FFFFFF;
+        background-color: #313131;
+        padding: 20px;
+    }
+      
+    .transformation_slider  .slider .slick-prev {
+        right: 200px;
+    }
+    
+    .transformation_slider .carousel {
+        margin-bottom: 150px;
+    }
+    
+    /* карусель с игроками */
+    .carouselTitle{
+        font-size: 30pt;
+        padding: 120px 20px 50px 20px;
+    }
+
+    .slider .slick-arrow {
+        top: 400px;
+    }
+  
+    .slider .slider__item img{
+        width: 244px;
+        height: 244px;
+    }
+    
+    .slider .slider__counter{
+        top: 415px;
+        font-size: 14pt;
+    }
+
+    footer{
+        padding: 50px 20px;
+        height: 240px;
+    }
+
+    .slick-dots{
+        display: flex;
+        gap: 3px;
+        width: max-content;
+        margin: 0 135px;
+    }
+
+    .slick-dots button {
+        visibility: hidden;    
+        border-radius: 50%;
+        background: #FFFFFF;
+        width: 20px;
+        height: 20px;
+        /* margin: ;: 0 20px; */
+    }
+}
